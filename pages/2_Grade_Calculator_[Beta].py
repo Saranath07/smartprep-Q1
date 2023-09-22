@@ -225,7 +225,10 @@ def diploma(subject):
                 T = 0.1*GAA + 0.2*ROE1 + 0.2*P1 + 0.2*P2 + 0.3*ET + BONUS
                 Grade(T)
             elif(subject == "System commands (Diploma in programming)"):
-                T = 0.06*GAA + 0.02*GAA1 + 0.02*GAA2 + max(0.15*Q1 + 0.15*Q2, 0.2*max(Q1,Q2)) + 0.3*ET + 0.15*SC_OP1 + 0.15*SC_OP2 + 0.1*VMT + BONUS
+                G = 0.06*GAA + 0.02*GAA1 + 0.02*GAA2
+                Q = max(0.15*Q1 + 0.15*Q2, 0.2*max(Q1,Q2)) + 0.3*ET
+                O = 0.15*SC_OP1 + 0.15*SC_OP2 + 0.1*VMT
+                T = G + Q + O + BONUS
                 if(SC_OP1 or SC_OP2 >= 40):
                     Grade(T)
                 else:
