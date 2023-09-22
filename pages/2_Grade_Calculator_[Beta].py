@@ -153,7 +153,7 @@ def diploma(subject):
         T = 0
         if(subject != "Business Analytics (DS Diploma)"):
             GAA = st.number_input("Average score in Best 10 out of all weekly graded assignments",step = 1,min_value = 0,max_value = 100)
-        if(subject != "Business Data management (DS Diploma)" or subject != "Tools in Data Science (DS Diploma)"):
+        if(subject != "Business Data management (DS Diploma)" and subject != "Tools in Data Science (DS Diploma)"):
             Q1 = st.number_input("Score in Quiz 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             Q2 = st.number_input("Score in Quiz 2 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
         if(subject == "Programming Data structures and algorithms using Python (PDSA) (Diploma in Programming)"):
