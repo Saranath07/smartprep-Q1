@@ -208,10 +208,10 @@ def diploma(subject):
                 else:
                     Grade(T,OPcheck = False)
             elif(subject == "Machine Learning Techniques (DS Diploma)"):
-                T = 0.2*GAA + 0.4*ET + max(0.2*Q1 + 0.2*Q2,0.3*max(Q1,Q2))
+                T = 0.2*GAA + 0.4*ET + max(0.2*Q1 + 0.2*Q2,0.3*max(Q1,Q2)) + BONUS
                 Grade(T)
             elif(subject == "Machine Learning Practice (DS Diploma)"):
-                T = 0.1*GAA + 0.3*ET + 0.15*OP1 + 0.15*OP2 + max(0.15*Q1 + 0.15*Q2, 0.2*max(Q1,Q2))
+                T = 0.1*GAA + 0.3*ET + 0.15*OP1 + 0.15*OP2 + max(0.15*Q1 + 0.15*Q2, 0.2*max(Q1,Q2)) + BONUS
                 if(OP1 or OP2 >= 40):
                     Grade(T)
                 else:
@@ -219,19 +219,19 @@ def diploma(subject):
             elif(subject == "Business Analytics (DS Diploma)"):
                 Q = 0.7*max(Q1,Q2) + 0.3*min(Q1,Q2)
                 A = A1 + A2 + A3 - min(A1,A2,A3)
-                T = 0.2*Q + 0.2*A + 0.4*ET
+                T = 0.2*Q + 0.2*A + 0.4*ET + BONUS
                 Grade(T)
             elif(subject == "Tools in Data Science (DS Diploma)"):
-                T = 0.1*GAA + 0.2*ROE1 + 0.2*P1 + 0.2*P2 + 0.3*ET
+                T = 0.1*GAA + 0.2*ROE1 + 0.2*P1 + 0.2*P2 + 0.3*ET + BONUS
                 Grade(T)
             elif(subject == "System commands (Diploma in programming)"):
-                T = 0.06*GAA + 0.02*GAA1 + 0.02*GAA2 + max(0.15*Q1 + 0.15*Q2, 0.2*max(Q1,Q2)) + 0.3*ET + 0.15*SC_OP1 + 0.15*SC_OP2 + 0.1*VMT
+                T = 0.06*GAA + 0.02*GAA1 + 0.02*GAA2 + max(0.15*Q1 + 0.15*Q2, 0.2*max(Q1,Q2)) + 0.3*ET + 0.15*SC_OP1 + 0.15*SC_OP2 + 0.1*VMT + BONUS
                 if(SC_OP1 or SC_OP2 >= 40):
                     Grade(T)
                 else:
                     Grade(T,OPcheck = False)
             elif(subject == "Application Development - 2 (Diploma in programming)"):
-                T =  0.05*GAA + 0.05*GLA2 + max(0.35*ET + 0.25*Q1 + 0.3*Q2, 0.5*ET + 0.3*max(Q1, Q2))
+                T =  0.05*GAA + 0.05*GLA2 + max(0.35*ET + 0.25*Q1 + 0.3*Q2, 0.5*ET + 0.3*max(Q1, Q2)) + BONUS
                 Grade(T)
             else:
                 T += 0.1*GAA + BONUS
