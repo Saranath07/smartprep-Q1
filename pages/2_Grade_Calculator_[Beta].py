@@ -175,13 +175,13 @@ def diploma(subject):
             ROE1 = st.number_input("Score in Remote Online Exam (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             P1 = st.number_input("Score in Take Home Project 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             P2 = st.number_input("Score in Take Home Project 2 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
-        if(subject == "System commands (Diploma in Programming)"):
+        if(subject == "System commands (Diploma in programming)"):
             GAA1 = st.number_input("Score in Non Proctored Programming Exam 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             GAA2 = st.number_input("Score in Non Proctored Programming Exam 2 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             SC_OP1 = st.number_input("Score in Online Remote Proctored Programming Exam 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             SC_OP2 = st.number_input("Score in Online Remote Proctored Programming Exam 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             VMT = st.number_input("Score in VM Task (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
-        if(subject == "Application development - 2 (Diploma in programming)"):
+        if(subject == "Application Development - 2 (Diploma in programming)"):
             GLA2 = st.number_input("Average of 2 Graded Lab Assignments(-1 if not attempted)",step = 1,min_value = 0,max_value = 100)
         ET = st.number_input("Score in End Term ",step = 1,min_value = 0,max_value = 100)
         BONUS = st.number_input("Bonus marks if any",value = 0,step = 1,min_value = 0,max_value = 5)
@@ -219,12 +219,12 @@ def diploma(subject):
             elif(subject == "Business Analytics (DS Diploma)"):
                 Q = 0.7*max(Q1,Q2) + 0.3*min(Q1,Q2)
                 A = A1 + A2 + A3 - min(A1,A2,A3)
-                T = 0.2*Q + 0.4*A + 0.4*ET
+                T = 0.2*Q + 0.2*A + 0.4*ET
                 Grade(T)
             elif(subject == "Tools in Data Science (DS Diploma)"):
                 T = 0.1*GAA + 0.2*ROE1 + 0.2*P1 + 0.2*P2 + 0.3*ET
                 Grade(T)
-            elif(subject == "System Commands (Diploma in Programming)"):
+            elif(subject == "System commands (Diploma in programming)"):
                 T = 0.06*GAA + 0.02*GAA1 + 0.02*GAA2 + max(0.15*Q1 + 0.15*Q2, 0.2*max(Q1,Q2)) + 0.3*ET + 0.15*SC_OP1 + 0.15*SC_OP2 + 0.1*VMT
                 if(SC_OP1 or SC_OP2 >= 40):
                     Grade(T)
