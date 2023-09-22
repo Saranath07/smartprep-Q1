@@ -176,10 +176,10 @@ def diploma(subject):
             P1 = st.number_input("Score in Take Home Project 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             P2 = st.number_input("Score in Take Home Project 2 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
         if(subject == "System commands (Diploma in programming)"):
-            GAA1 = st.number_input("Score in Non Proctored Programming Exam 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
-            GAA2 = st.number_input("Score in Non Proctored Programming Exam 2 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
-            SC_OP1 = st.number_input("Score in Online Remote Proctored Programming Exam 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
-            SC_OP2 = st.number_input("Score in Online Remote Proctored Programming Exam 2 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
+            GAA1 = st.number_input("Score in Non Proctored Programming Exam 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100,key = "A1")
+            GAA2 = st.number_input("Score in Non Proctored Programming Exam 2 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100,key = "G2")
+            SC_OP1 = st.number_input("Score in Online Remote Proctored Programming Exam 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100,key = "O1")
+            SC_OP2 = st.number_input("Score in Online Remote Proctored Programming Exam 2 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100,key = "P2")
             VMT = st.number_input("Score in VM Task (-1, if not attempted)",step = 1,min_value = 0,max_value = 100,key = "VM")
         if(subject == "Application Development - 2 (Diploma in programming)"):
             GLA2 = st.number_input("Average of 2 Graded Lab Assignments(-1 if not attempted)",step = 1,min_value = 0,max_value = 100)
