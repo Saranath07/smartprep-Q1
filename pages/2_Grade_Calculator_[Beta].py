@@ -167,7 +167,7 @@ def diploma(subject):
         if(subject == "Programming concepts using Java (Diploma in programming)" or subject == "Machine Learning Practice (DS Diploma)"):
             OP1 = st.number_input("Score in Online Programming Exam 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             OP2 = st.number_input("Score in Online Programming Exam 2 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
-        if(subject == "Busines Analytics (DS Diploma)"):
+        if(subject == "Business Analytics (DS Diploma)"):
             A1 = st.number_input("Score in Assignment 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 20)
             A2 = st.number_input("Score in Assignment 2 (-1, if not attempted)",step = 1,min_value = 0,max_value = 20)
             A3 = st.number_input("Score in Assignment 3 (-1, if not attempted)",step = 1,min_value = 0,max_value = 20)
@@ -175,7 +175,7 @@ def diploma(subject):
             ROE1 = st.number_input("Score in Remote Online Exam (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             P1 = st.number_input("Score in Take Home Project 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             P2 = st.number_input("Score in Take Home Project 2 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
-        if(subject == "System Commands (Diploma in Programming)"):
+        if(subject == "System commands (Diploma in Programming)"):
             GAA1 = st.number_input("Score in Non Proctored Programming Exam 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             GAA2 = st.number_input("Score in Non Proctored Programming Exam 2 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             SC_OP1 = st.number_input("Score in Online Remote Proctored Programming Exam 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
@@ -216,7 +216,7 @@ def diploma(subject):
                     Grade(T)
                 else:
                     Grade(T,OPcheck = False)
-            elif(subject == "Business Aalytics (DS Diploma)"):
+            elif(subject == "Business Analytics (DS Diploma)"):
                 Q = 0.7*max(Q1,Q2) + 0.3*min(Q1,Q2)
                 A = A1 + A2 + A3 - min(A1,A2,A3)
                 T = 0.2*Q + 0.4*A + 0.4*ET
