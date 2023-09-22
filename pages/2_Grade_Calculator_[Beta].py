@@ -175,7 +175,7 @@ def diploma(subject):
             ROE1 = st.number_input("Score in Remote Online Exam (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             P1 = st.number_input("Score in Take Home Project 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             P2 = st.number_input("Score in Take Home Project 2 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
-        if(subject == "System COmmands (Diploma in Programming)"):
+        if(subject == "System Commands (Diploma in Programming)"):
             GAA1 = st.number_input("Score in Non Proctored Programming Exam 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             GAA2 = st.number_input("Score in Non Proctored Programming Exam 2 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
             SC_OP1 = st.number_input("Score in Online Remote Proctored Programming Exam 1 (-1, if not attempted)",step = 1,min_value = 0,max_value = 100)
