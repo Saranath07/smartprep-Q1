@@ -293,7 +293,7 @@ def main():
             if button_a:
                 st.write(ans_text)
                 placeholder = st.empty()
-                isclick = placeholder.button('delete this button')
+                isclick = placeholder.button('Hide Answer')
                 if isclick:
                     placeholder.empty()
 
